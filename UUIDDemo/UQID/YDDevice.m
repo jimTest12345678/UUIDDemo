@@ -2,7 +2,7 @@
 //  YDDevice.m
 //  UQIDDemo
 //
-//  Created by jimzhao on 21/10/16.
+//  Created by jimzhao on 21/10/20.
 //  Copyright © 2021年 jimzhao. All rights reserved.
 //
 
