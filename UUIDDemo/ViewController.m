@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "YDDevice.h"
 
 @interface ViewController ()
 
@@ -15,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"设备名称：ihpone11");
+    NSLog(@"bundle：com.skip.demo.UUIDDemo2");
+    NSLog(@"QUID：%@",[YDDevice getUQID]);
 }
-
-
 @end
