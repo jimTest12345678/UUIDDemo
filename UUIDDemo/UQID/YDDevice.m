@@ -9,6 +9,7 @@
 #import "YDDevice.h"
 #import "YDKeyChain.h"
 #import <AdSupport/ASIdentifierManager.h>
+#import <DeviceCheck/DCDevice.h>
 
 #define UQID_KEY @"com.device.uqid"
 
@@ -88,5 +89,18 @@
     }
     return uqid;
 }
-
++ (void)getDeviceCheckTokenWithBlock:(ReturnValueBlock) block{
+    if ([[DCDevice currentDevice] isSupported]) {
+        [[DCDevice currentDevice] generateTokenWithCompletionHandler:^(NSData * _Nullable token, NSError * _Nullable error) {
+            NSString *deviceToken = [token base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed]; NSLog(@"deviceToken %@", deviceToken);
+            if (block) {
+                block(deviceToken);
+            }
+        }];
+    } else{
+        if (block) {
+            block(@"");
+        }
+    }
+}
 @end

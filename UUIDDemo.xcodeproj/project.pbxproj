@@ -19,6 +19,7 @@
 		76861FE927203A780097C969 /* UUIDDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76861FE827203A780097C969 /* UUIDDemoUITestsLaunchTests.m */; };
 		76861FFA27203AA30097C969 /* YDKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 76861FF627203AA30097C969 /* YDKeyChain.m */; };
 		76861FFB27203AA30097C969 /* YDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 76861FF727203AA30097C969 /* YDDevice.m */; };
+		768E7DFA2721AF7A00288EB8 /* DeviceCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E7DF92721AF7A00288EB8 /* DeviceCheck.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		76861FF727203AA30097C969 /* YDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDDevice.m; sourceTree = "<group>"; };
 		76861FF827203AA30097C969 /* YDKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDKeyChain.h; sourceTree = "<group>"; };
 		76861FF927203AA30097C969 /* YDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDDevice.h; sourceTree = "<group>"; };
+		768E7DF92721AF7A00288EB8 /* DeviceCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceCheck.framework; path = System/Library/Frameworks/DeviceCheck.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768E7DFA2721AF7A00288EB8 /* DeviceCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +97,7 @@
 				76861FDB27203A780097C969 /* UUIDDemoTests */,
 				76861FE527203A780097C969 /* UUIDDemoUITests */,
 				76861FBE27203A730097C969 /* Products */,
+				768E7DF82721AF7A00288EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +156,14 @@
 				76861FF727203AA30097C969 /* YDDevice.m */,
 			);
 			path = UQID;
+			sourceTree = "<group>";
+		};
+		768E7DF82721AF7A00288EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				768E7DF92721AF7A00288EB8 /* DeviceCheck.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

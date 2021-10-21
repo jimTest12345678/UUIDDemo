@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef void (^ReturnValueBlock)(id returnValue);
+
 @interface YDDevice : NSObject
 
 //获取IDFA
@@ -22,5 +24,7 @@
 
 //获取UQID
 + (NSString *)getUQID;
+
++ (void)getDeviceCheckTokenWithBlock:(ReturnValueBlock) block;
 
 @end

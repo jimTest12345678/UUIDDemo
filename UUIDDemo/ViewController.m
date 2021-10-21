@@ -19,5 +19,11 @@
     NSLog(@"设备名称：ihpone11");
     NSLog(@"bundle：com.skip.demo.UUIDDemo2");
     NSLog(@"QUID：%@",[YDDevice getUQID]);
+    // DeviceCheckToken
+    [YDDevice getDeviceCheckTokenWithBlock:^(id returnValue) {
+        NSLog(@"设备名称：ihpone11");
+        NSLog(@"bundle：com.skip.demo.UUIDDemo2");
+        NSLog(@"DeviceCheckToken：%@",returnValue);
+    }];
 }
 @end
