@@ -26,4 +26,12 @@
         NSLog(@"DeviceCheckToken：%@",returnValue);
     }];
 }
+- (IBAction)actions:(UIButton *)sender {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"获取设备udid" message:[YDDevice getUQID] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertController addAction:sureAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 @end
